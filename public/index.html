@@ -1,0 +1,179 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>university website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&family=Poppins:wght@200;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+<!-- header section of website      -->
+
+
+    <section class="header">
+        <nav class="navbar">
+            <!-- <a href="index.html"><img src="/img/logo.png" alt=""></a> -->
+            <h1>MIT.</h1>
+            <div id="navlink"class="navlinks">
+               
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="course.html">Courses</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <div  class="textbox">
+            <h1 data-aos="fade-up" >World's Biggest University</h1>
+            <p data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, tenetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, quis?</p>
+            <a data-aos="fade-up" href="" class="herobtn">Visit Us To Know More</a>
+        </div>
+    </section>
+
+
+<!-- course section of website      -->
+
+
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, dicta!</p>
+
+        <div data-aos="fade-up" class="row">
+            <div class="coursecol">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate blanditiis distinctio aperiam voluptatem unde! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="coursecol">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate blanditiis distinctio aperiam voluptatem unde! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="coursecol">
+                <h3>Post Graduation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate blanditiis distinctio aperiam voluptatem unde! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+    </section>
+
+
+<!-- campus section of website  -->
+
+
+ <section class="campus">
+    <h1>Our Gloabal campus</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, ipsam.</p>
+    <div  data-aos="fade-up" class="row">
+        <div class="campuscol">
+            <img src="/public/img/london.png">
+            <div class="layer">
+                <h3>LONDON</h3>
+            </div>
+        </div>
+        <div class="campuscol">
+            <img src="/public/img/newyork.png">
+            <div class="layer">
+                <h3>NEW YORK</h3>
+            </div>
+        </div>
+        <div class="campuscol">
+            <img src="/public/img/washington.png">
+            <div class="layer">
+                <h3>WASHINGTON</h3>
+            </div>
+        </div>
+    </div>
+ </section>
+
+
+ <!-- section for facilities  -->
+
+
+
+ <section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, omnis?</p>
+
+    <div data-aos="fade-up" class="row">
+        <div class="facilitiescol">
+            <img src="img/library.png">
+            <h3>World Class Library</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus possimus earum reiciendis accusantium tempore </p>
+        </div>
+        <div class="facilitiescol">
+            <img src="img/cafeteria.png">
+            <h3>Healthy Food</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus possimus earum reiciendis accusantium tempore </p>
+        </div>
+        <div class="facilitiescol">
+            <img src="img/basketball.png">
+            <h3>Large Playground</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus possimus earum reiciendis accusantium tempore </p>
+        </div>
+    </div>
+ </section>
+
+
+ <!-- Contact us  -->
+
+
+ <section class="ctn">
+    <h1 data-aos="fade-up">Enroll For Our Various Online Courses <br> Anywhere From The World</h1>
+    <a data-aos="fade-up" href="" class="herobtn">Contact Us</a>
+ </section>
+
+
+
+ <!-- footer  -->
+
+
+ <section class="abt">
+    <h3>About Us</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, rem! Lorem ipsum dolor sit.</p>
+    <div class="icons">
+        
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    
+    <p>Made with <i class="fa fa-heart"></i> By Jay</p>
+
+ </section>
+
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script>
+    AOS.init(
+            {
+                duration: 1000,
+                easing: 'slide',
+                // once: true,
+                mirror: false,
+                delay: 200
+            }
+        );
+ </script>
+
+<script>
+    // var navlink = document.getElementsById("navlink");
+
+    function showmenu(){
+        // navlink.style.right="0";
+        document.getElementById("navlink").style.right="-66px";
+    }
+    function hidemenu(){
+        document.getElementById("navlink").style.right="-360px";
+    }
+</script>
+    
+</body>
+</html>

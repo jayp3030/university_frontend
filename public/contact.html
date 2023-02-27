@@ -1,0 +1,138 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>university website</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&family=Poppins:wght@200;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+
+<!-- header section of website      -->
+
+
+    <section class="header1">
+        <nav class="navbar">
+            <a href="index.html"><img src="/img/logo.png" alt=""></a>
+            <div class="navlinks" id="navlink">
+               
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="course.html">Courses</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1 data-aos="fade-up">Contact Us</h1>
+    </section>
+
+
+    <!-- -----contact us----- -->
+
+    <section class="loc">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3669.7355119715053!2d72.59223971496937!3d23.106775984910488!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e83c959d4de6f%3A0x748d0828c02cf9fa!2sVishwakarma%20Government%20Engineering%20College!5e0!3m2!1sen!2sin!4v1660020577598!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact">
+        <div data-aos="fade-up" class="row">
+            <div class="contactcol">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>XYZ road near ABC</h5>
+                        <p>Ahmedabad gujrat, INDIA</p>   
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+00 1234567890</h5>
+                        <p>Monaday To Saturday, 10AM To 6PM </p>   
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>xyz@gmail.com</h5>
+                        <p>Email Us Your Query</p>   
+                    </span>
+                </div>
+            </div>     
+        
+         
+         <div data-aos="fade-up" class="contactcol">
+            <form action="">
+                <input type="text" placeholder="Enter Your Name" required>
+                <input type="email" placeholder="Email adress" required>
+                <input type="email" placeholder="Enter Your Subject" required>
+                <textarea rows="8" placeholder="Message" required></textarea>
+                <button type="submit" class="herobtn redbtn">Send Message</button>
+            </form>
+         </div>
+        </div>
+            
+     
+    </section>
+
+
+
+
+   
+
+
+
+
+
+ <!-- footer  -->
+
+
+ <section class="abt">
+    <h3>About Us</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, rem! Lorem ipsum dolor sit.</p>
+    <div class="icons">
+        
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    
+    <p>Made with <i class="fa fa-heart"></i> By Jay</p>
+
+ </section>
+
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script>
+    AOS.init(
+            {
+                duration: 1000,
+                easing: 'slide',
+                // once: true,
+                mirror: false,
+                delay: 200
+            }
+        );
+ </script>
+<script>
+    // var navlink = document.getElementsById("navlink");
+
+    function showmenu(){
+        // navlink.style.right="0";
+        document.getElementById("navlink").style.right="-66px";
+    }
+    function hidemenu(){
+        document.getElementById("navlink").style.right="-360px";
+    }
+</script>
+    
+</body>
+</html>
